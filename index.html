@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CV – Sarai Noemi Mamani Cutipa</title>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#e5594b;
+    --coral-dark:#b83a30;
+    --ink:#2b2b2b;
+    --muted:#777;
+    --line:#4a4a4a;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Roboto',Arial,sans-serif;background:#e9e9e9;color:var(--ink);padding:24px 0}
+  .cv{width:794px;min-height:1123px;margin:0 auto;background:#fff;display:grid;grid-template-columns:270px 1fr;box-shadow:0 4px 24px rgba(0,0,0,.18)}
+
+  /* ---------- Columna izquierda ---------- */
+  .side{background:var(--coral);color:#fff;padding:34px 24px;text-align:center}
+  .photo{width:132px;height:132px;border-radius:50%;border:12px solid var(--coral-dark);margin:0 auto 22px;overflow:hidden;background:var(--coral-dark)}
+  .photo img{width:100%;height:100%;object-fit:cover;display:block}
+  .name{font-size:22px;font-weight:700;line-height:1.2}
+  .role{font-size:11.5px;letter-spacing:.6px;margin-top:8px;font-weight:300;text-transform:uppercase}
+  .icon-people{margin:26px auto 14px;width:50px;height:50px}
+  .about{font-size:12.5px;line-height:1.55;font-weight:300}
+  .side h3{font-size:12.5px;font-weight:700;letter-spacing:.5px;margin:34px 0 12px;text-transform:uppercase}
+  .side p,.side li{font-size:12.5px;line-height:1.5;font-weight:300}
+  .side ul{list-style:none}
+  .side li{margin-bottom:9px}
+  .contact p{margin-bottom:6px;word-break:break-word}
+
+  /* ---------- Columna derecha ---------- */
+  .main{padding:30px 34px 30px 28px}
+  .sec-title{display:flex;align-items:center;gap:14px;margin:6px 0 18px}
+  .sec-title svg{width:30px;height:30px;stroke:var(--ink);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex:none}
+  .sec-title h2{font-size:13px;font-weight:500;letter-spacing:.8px;text-transform:uppercase}
+
+  .timeline{position:relative;margin-left:11px;border-left:1.5px solid var(--line);padding-left:0;margin-bottom:26px}
+  .item{position:relative;padding:0 0 20px 14px}
+  .item:last-child{padding-bottom:4px}
+  .item::before{content:"";position:absolute;left:-6.5px;top:3px;width:11px;height:11px;border-radius:50%;background:#2b2b2b}
+  .item h4{font-size:12.5px;font-weight:500;text-transform:uppercase;line-height:1.3}
+  .item .sub{font-size:12.5px;margin-top:3px;line-height:1.35}
+  .item .date{font-size:11px;color:var(--muted);margin-top:3px}
+  .item p,.item li{font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:5px;font-weight:300}
+  .item ul{padding-left:15px;margin-top:3px}
+  .item ul li{margin-top:2px}
+  .todo{color:var(--coral);font-style:italic}
+
+  .courses .item h4{font-size:12px;text-transform:none;font-weight:500}
+  .courses .item{padding-bottom:12px}
+
+  @media (max-width:820px){
+    body{padding:0;background:#fff}
+    .cv{width:100%;grid-template-columns:1fr;box-shadow:none}
+  }
+  @media print{
+    body{background:#fff;padding:0}
+    .cv{box-shadow:none;width:210mm;min-height:297mm}
+    *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    @page{size:A4;margin:0}
+  }
+</style>
+</head>
+<body>
+<div class="cv">
+
+  <!-- ========== COLUMNA IZQUIERDA ========== -->
+  <aside class="side">
+    <div class="photo"><img alt="Foto de Sarai Noemi Mamani Cutipa" src="data:image/jpeg;base64,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"></div>
+    <div class="name">Sarai Noemi<br>Mamani Cutipa</div>
+    <div class="role">Asistente en Administración</div>
+
+    <svg class="icon-people" viewBox="0 0 64 64" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="32" cy="16" r="8"/><path d="M18 42c0-8 6-14 14-14s14 6 14 14v6H18z"/>
+      <circle cx="13" cy="27" r="6"/><path d="M3 46c0-6 4-10 10-10"/>
+      <circle cx="51" cy="27" r="6"/><path d="M61 46c0-6-4-10-10-10"/>
+    </svg>
+
+    <p class="about">Profesional técnico titulada con más de 7 años de experiencia en servicios de bienestar y atención al personal en la Unidad Minera Tacaza. Capacitada en liderazgo y motivación, seguridad y salud en el trabajo y primeros auxilios. Aporto orden, buen trato y cumplimiento de normas y plazos.</p>
+
+    <div class="contact">
+      <h3>Contacto</h3>
+      <p>sarainoemi16@gmail.com</p>
+      <p>Cel. 9521091</p>
+      <p>Francisco Bolognesi N.° 411, Barrio Belén, Santa Lucía, Lampa, Puno</p>
+    </div>
+
+    <h3>Habilidades</h3>
+    <ul>
+      <li>Atención y buen trato al personal y al público</li>
+      <li>Responsabilidad, honestidad y puntualidad certificadas por su empleador</li>
+      <li>Trabajo en equipo y cumplimiento de normas y procedimientos</li>
+      <li>Liderazgo y motivación</li>
+      <li>Nociones de psicosociología en el trabajo</li>
+      <li>Inglés básico certificado (140 horas)</li>
+    </ul>
+  </aside>
+
+  <!-- ========== COLUMNA DERECHA ========== -->
+  <main class="main">
+
+    <div class="sec-title">
+      <svg viewBox="0 0 32 32"><rect x="3" y="9" width="26" height="18" rx="2"/><path d="M11 9V6a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v3M3 17h26"/></svg>
+      <h2>Experiencia laboral</h2>
+    </div>
+    <div class="timeline">
+      <div class="item">
+        <h4>I.S.S.A. E.I.R.L.</h4>
+        <div class="date">Abril 2023 – Actualidad</div>
+        <p class="todo">Funciones principales: por completar</p>
+      </div>
+      <div class="item">
+        <h4>Servicios Múltiples Virgen de Santa Cecilia E.I.R.L.</h4>
+        <div class="sub">Auxiliar de Limpieza · Unidad Minera Tacaza</div>
+        <div class="date">Agosto 2017 – Marzo 2023</div>
+        <ul>
+          <li>Orden y limpieza de los ambientes de la unidad minera, cumpliendo procedimientos y estándares de seguridad.</li>
+          <li>Participación en capacitaciones de seguridad, liderazgo y motivación.</li>
+        </ul>
+      </div>
+      <div class="item">
+        <h4>Servicios Múltiples Virgen de Santa Cecilia E.I.R.L.</h4>
+        <div class="sub">Mesera, Área de Bienestar Social (Comedor) · Unidad Minera Tacaza</div>
+        <div class="date">Marzo 2013 – Enero 2015</div>
+        <ul>
+          <li>Atención diaria al personal de la unidad minera en el comedor.</li>
+          <li>Certificado de trabajo que destaca eficiencia, responsabilidad, honestidad y dedicación.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec-title">
+      <svg viewBox="0 0 32 32"><path d="M5 4h16l6 6v18H5z"/><path d="M21 4v6h6M10 18l3 3 6-7"/></svg>
+      <h2>Formación académica</h2>
+    </div>
+    <div class="timeline">
+      <div class="item">
+        <h4>Profesional Técnico en Producción Agropecuaria</h4>
+        <div class="sub">IESTP Santa Lucía</div>
+        <div class="date">Abril 2022 · Título obtenido</div>
+      </div>
+      <div class="item">
+        <h4>Estudios actuales: ASPT</h4>
+        <div class="sub">En curso</div>
+      </div>
+      <div class="item">
+        <h4>Educación secundaria completa</h4>
+        <div class="sub">I.E.S. Politécnico Industrial, Santa Lucía</div>
+      </div>
+      <div class="item">
+        <h4>Educación primaria completa</h4>
+        <div class="sub">I.E.P. Glorioso N.° 71009, Santa Lucía</div>
+      </div>
+    </div>
+
+    <div class="sec-title">
+      <svg viewBox="0 0 32 32"><path d="M16 5 3 12l13 7 13-7z"/><path d="M8 15v7c0 2 4 4 8 4s8-2 8-4v-7M29 12v9"/></svg>
+      <h2>Cursos y capacitaciones</h2>
+    </div>
+    <div class="timeline courses">
+      <div class="item"><h4>Buenas prácticas de manufactura e innovación en industrias alimentarias</h4><div class="date">IESTP Santa Lucía y Escuela Científica del Pan · 2023 · 80 h</div></div>
+      <div class="item"><h4>IV Congreso Regional CRESTIAPA 2023</h4><div class="date">IESTP Santa Lucía y DRE Puno · 2023 · 96 h</div></div>
+      <div class="item"><h4>Monitoreo y Evaluación de la Calidad Ambiental (nota 17)</h4><div class="date">CALGESA · 2022 · 120 h</div></div>
+      <div class="item"><h4>I Foro Regional: Producción y comercialización de la fibra de alpaca</h4><div class="date">Municipalidad Distrital de Santa Lucía · 2022 · 8 h</div></div>
+      <div class="item"><h4>Inglés básico</h4><div class="date">IESTP Santa Lucía · 2021 · 140 h</div></div>
+      <div class="item"><h4>V Seminario de actualización e innovación en Producción Agropecuaria</h4><div class="date">IESTP Santa Lucía · 2021 · 80 h</div></div>
+      <div class="item"><h4>I Seminario virtual en actualización e innovación</h4><div class="date">IESTP Santa Lucía · 2020 · 80 h</div></div>
+      <div class="item"><h4>Psicosociología en el trabajo</h4><div class="date">La Positiva Seguros e Impacto · 2019 · 2 h</div></div>
+      <div class="item"><h4>Primeros auxilios</h4><div class="date">La Positiva Seguros e Impacto · 2019 · 2 h</div></div>
+    </div>
+
+  </main>
+</div>
+</body>
+</html>
